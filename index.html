@@ -1,0 +1,336 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="¡Hacé tu pedido! te lo enviamos sin cargo"
+    />
+    <meta
+      name="keywords"
+      content="Amaicha, Hospedaje, Camping, Cantina, Carnaval, Turismo, Cultura, Cactus, Naturaleza"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Phudu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap"
+      rel="stylesheet"
+    />
+    <title>Reservas</title>
+    <link rel="shortcut icon" href="../assets/icon/R.png" type="image/x-icon" />
+  </head>
+  <body class="bg-personalizado">
+    <header>
+      <nav class="navbar Nav__">
+        <div class="container-fluid Nav__">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/icon/R.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Pagina Principal</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Camping</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Hospedaje</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cantina</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ubicación</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container-fluid">
+      <div class="row" style>
+        <div class="col-3 col-lg-3 Price">
+          <div
+            class="row Price__box w-100 d-flex text-center align-items-center"
+          >
+            <h4>Precios de Reservas (por dia)</h4>
+            <p id="precio1">Carpa Grande:</p>
+            <p id="precio2">Carpa chica</p>
+          </div>
+          <div
+            class="row Price__box w-100 d-flex text-center align-items-center"
+          >
+            <h4>Precio de Alquileres (por dia)</h4>
+            <p id="precio3">Mesa</p>
+            <p id="precio4">Silla</p>
+          </div>
+          <div
+            class="row filter__box w-100"
+            style="background-color: rgba(255, 0, 170, 0.109)"
+          >
+            <h4>Cotizacion del dolar:</h4>
+            <p id="blue">blue</p>
+            <p id="qatar">tarjeta</p>
+            <p id="ccl">ccl</p>
+          </div>
+        </div>
+        <div class="col-9 col-lg-9" id="Productos">
+          <div class="Card_">
+            <div class="row">
+              <div class="col-5 col-lg-5 img-fluid">
+                <img
+                  src="https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sc8bd4f3a7fa2915d/image/i4320198f600bb72b/version/1473111543/image.jpg"
+                  alt=""
+                  id="thumbnail"
+                  class="w-100 h-100"
+                />
+              </div>
+              <div class="col-7 col-lg-7">
+                <h2 id="Nombre1">Titulo</h2>
+                <h6 id="descripcion1">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Nemo, saepe nam blanditiis dolores et non iure at, magnam
+                  nesciunt aliquid ducimus quod delectus voluptate beatae
+                  exercitationem aut, officia omnis necessitatibus?
+                </h6>
+                <div class="d-flex p-3 align-items-center row">
+                  <div>
+                    <button
+                      type="button"
+                      class="btn btn-success mr-2"
+                      id="+1cg"
+                    >
+                      +
+                    </button>
+                    <button type="button" class="btn btn-danger" id="-1cg">
+                      -
+                    </button>
+                  </div>
+                  <div>
+                    <p id="Cantidad1">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Card_">
+            <div class="row">
+              <div class="col-5 col-lg-5 img-fluid">
+                <img
+                  src="https://http2.mlstatic.com/para-camping-carpa-D_NQ_NP_840825-MCO25502007869_042017-F.jpg"
+                  alt=""
+                  id="thumbnail"
+                  class="w-100 h-100"
+                />
+              </div>
+              <div class="col-7 col-lg-7">
+                <h2 id="Nombre2">Titulo</h2>
+                <h6 id="descripcion2">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Nemo, saepe nam blanditiis dolores et non iure at, magnam
+                  nesciunt aliquid ducimus quod delectus voluptate beatae
+                  exercitationem aut, officia omnis necessitatibus?
+                </h6>
+                <div class="d-flex p-3 align-items-center row">
+                  <div>
+                    <button
+                      type="button"
+                      class="btn btn-success mr-2"
+                      id="+1cc"
+                    >
+                      +
+                    </button>
+                    <button type="button" class="btn btn-danger" id="-1cc">
+                      -
+                    </button>
+                  </div>
+                  <div>
+                    <p id="Cantidad2">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Card_">
+            <div class="row">
+              <div class="col-5 col-lg-5 img-fluid">
+                <img
+                  src="https://th.bing.com/th/id/OIP.cT7sC78v5IyobDLAHo3lIwHaHa?pid=ImgDet&rs=1"
+                  alt=""
+                  id="thumbnail"
+                  class="w-100 h-100"
+                />
+              </div>
+              <div class="col-7 col-lg-7">
+                <h2 id="Nombre3">Titulo</h2>
+                <h6 id="descripcion3">
+                  Lorem ipsum dolor, sit amñlet consectetur adipisicing elit.
+                  Nemo, saepe nam blanditiis dolores et non iure at, magnam
+                  nesciunt aliquid ducimus quod delectus voluptate beatae
+                  exercitationem aut, officia omnis necessitatibus?
+                </h6>
+                <div class="d-flex p-3 align-items-center row">
+                  <div>
+                    <button type="button" class="btn btn-success mr-2" id="+1m">
+                      +
+                    </button>
+                    <button type="button" class="btn btn-danger" id="-1m">
+                      -
+                    </button>
+                  </div>
+                  <div>
+                    <p id="Cantidad3">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Card_">
+            <div class="row">
+              <div class="col-5 col-lg-5 img-fluid">
+                <img
+                  src="https://th.bing.com/th/id/OIP.OpGpPfK3ki_9hYaaVfR0HQHaGA?pid=ImgDet&rs=1"
+                  alt="silla"
+                  id="thumbnail"
+                  class="w-100 h-100"
+                />
+              </div>
+              <div class="col-7 col-lg-7">
+                <h2 id="Nombre4">Titulo</h2>
+                <h6 id="descripcion4">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Nemo, saepe nam blanditiis dolores et non iure at, magnam
+                  nesciunt aliquid ducimus quod delectus voluptate beatae
+                  exercitationem aut, officia omnis necessitatibus?
+                </h6>
+                <div class="d-flex p-3 align-items-center row">
+                  <div>
+                    <button type="button" class="btn btn-success mr-2" id="+1s">
+                      +
+                    </button>
+                    <button type="button" class="btn btn-danger" id="-1s">
+                      -
+                    </button>
+                  </div>
+                  <div>
+                    <p id="Cantidad4">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid d-flex mb-1">
+            <h4>Dias:</h4>
+            <input
+              value="1"
+              min="1"
+              type="number"
+              class="form-control form-control-sm w-80"
+              placeholder="Debe ser al menos 1"
+              id="dias"
+            />
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary mt-6" type="button" id="resumen">
+              Resumen
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid">
+      <div class="redes">
+        <h3>Redes sociales:</h3>
+        <a href="https://www.instagram.com/?hl=en"
+          ><img src="../assets/Redes/2.png" alt="Instagram"
+        /></a>
+        <a href="https://twitter.com/"
+          ><img src="../assets/Redes/1.png" alt="Twitter"
+        /></a>
+        <a href="https://web.whatsapp.com/"
+          ><img src="../assets/Redes/3.png" alt="Whatsapp"
+        /></a>
+        <a href="https://es-la.facebook.com/"
+          ><img src="../assets/Redes/facebook.png" alt="Facebook"
+        /></a>
+        <p>© 2023 Todos los derechos reservados.</p>
+        <a href="#top" class="text-center">Volver arriba</a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script src="./JS/main.js"></script>
+  </body>
+</html>

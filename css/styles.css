@@ -1,0 +1,63 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cartas {
+  background-color: #e2c044;
+}
+
+.Nav__ {
+  background-color: #4a7017;
+}
+.Nav__ a img {
+  width: 50px;
+  height: 100%;
+}
+
+footer {
+  background-color: #1e152a;
+  margin-top: 10vh;
+  display: flex;
+}
+footer .redes h3 {
+  color: #e2c044;
+  display: block;
+}
+footer .redes img {
+  width: 30px;
+}
+footer .redes p {
+  color: #e2c044;
+}
+
+.bg-personalizado {
+  background-color: rosybrown !important;
+}
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.resumen_titulo {
+  text-align: end;
+  display: block;
+}
+
+.Price {
+  height: 800px;
+}
+.price__box {
+  height: 32%;
+  width: 100;
+}
+
+.Card_ {
+  margin-top: 5px;
+  border: 2px solid #1e152a;
+  padding: 20px;
+}
+
+.Canasto div {
+  padding: 30px;
+}
